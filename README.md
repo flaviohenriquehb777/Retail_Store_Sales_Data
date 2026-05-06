@@ -1,6 +1,6 @@
 # Retail Store Sales Data: Recuperação de Margem (Análises Descritiva, Diagnóstica e Prescritiva)
 
-[![Dashboard](docs/assets/thumbnail_dark_rounded.png)](https://flaviohenriquehb777.github.io/Retail_Store_Sales_Data/)
+[![Dashboard](docs/assets/miniatura_rounded.png)](https://flaviohenriquehb777.github.io/Retail_Store_Sales_Data/)
 
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Pandas](https://img.shields.io/badge/pandas-data%20analysis-150458?logo=pandas&logoColor=white)](https://pandas.pydata.org/)
@@ -40,7 +40,7 @@ Este projeto consolida uma análise ponta a ponta de performance comercial, com 
 O repositório foi organizado para uso profissional e reprodutibilidade:
 - `docs/`: conteúdo publicado no GitHub Pages (Dashboard).
   - `docs/index.html`: Dashboard (cópia do arquivo final).
-  - `docs/assets/thumbnail_dark_rounded.png`: miniatura usada neste README.
+  - `docs/assets/miniatura_rounded.png`: miniatura usada neste README.
 - `data/raw/`: base original (.xlsx).
 - `reports/`: relatório executivo em `.docx`.
 - `reports/figures/`: figuras geradas na análise descritiva.
