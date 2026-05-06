@@ -6,7 +6,7 @@ from docx import Document
 
 
 def main() -> Path:
-    docx_path = Path("Relatorio_Executivo_Recuperacao_de_Margem_Acentuado.docx")
+    docx_path = Path("reports") / "Relatorio_Executivo_Recuperacao_de_Margem_Acentuado.docx"
     if not docx_path.exists():
         raise FileNotFoundError(str(docx_path))
 

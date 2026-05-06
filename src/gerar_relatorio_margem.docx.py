@@ -145,7 +145,7 @@ def add_table(document: Document, headers: list[str], rows: list[list[str]]) -> 
 
 
 def main() -> Path:
-    base_path = Path("Case 1 - Case Retail Store Sales Data.xlsx")
+    base_path = Path("data") / "raw" / "Case 1 - Case Retail Store Sales Data.xlsx"
     df = pd.read_excel(base_path, sheet_name="Sales_retail_store")
 
     rename_map: dict[str, str] = {}

@@ -40,9 +40,11 @@ Este projeto consolida uma análise ponta a ponta de performance comercial, com 
 O repositório foi organizado para uso profissional e reprodutibilidade:
 - `docs/`: conteúdo publicado no GitHub Pages (Dashboard).
   - `docs/index.html`: Dashboard (cópia do arquivo final).
-  - `docs/assets/thumbnail.png`: miniatura usada neste README.
+  - `docs/assets/thumbnail_dark_rounded.png`: miniatura usada neste README.
 - `data/raw/`: base original (.xlsx).
 - `reports/`: relatório executivo em `.docx`.
+- `reports/figures/`: figuras geradas na análise descritiva.
+- `dashboards/`: dashboard fonte (HTML single-file).
 - `notebooks/`: notebooks para reprodução das análises.
 - `src/`: scripts auxiliares (geração e ajustes do relatório).
 
@@ -72,7 +74,7 @@ Os principais achados e recomendações executivas estão consolidados no relat�
 - Publicação (GitHub Pages):  
   https://flaviohenriquehb777.github.io/Retail_Store_Sales_Data/
 - Arquivo publicado: `docs/index.html`
-- Arquivo de referência (inalterado): `dashboard_retail_store_part1.html`
+- Arquivo de referência (inalterado): `dashboards/dashboard_retail_store_part1.html`
 
 ## Tecnologias Utilizadas
 - **Python** (análises e automação do relatório)

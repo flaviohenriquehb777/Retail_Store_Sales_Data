@@ -41,7 +41,11 @@ def fix_doc(doc: Document) -> None:
 def main() -> Path:
     import sys
 
-    docx_path = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("Relatorio_Executivo_Recuperacao_de_Margem_Acentuado.docx")
+    docx_path = (
+        Path(sys.argv[1])
+        if len(sys.argv) > 1
+        else (Path("reports") / "Relatorio_Executivo_Recuperacao_de_Margem_Acentuado.docx")
+    )
     if not docx_path.exists():
         raise FileNotFoundError(str(docx_path))
 
