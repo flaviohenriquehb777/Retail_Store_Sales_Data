@@ -71,7 +71,7 @@ Os principais achados e recomendações executivas estão consolidados no relat�
 - `reports/Relatorio_Executivo_Recuperacao_de_Margem_Acentuado.docx`
 
 ## Dashboard (HTML)
-- [![Prévia do dashboard](docs/assets/miniatura_rounded.svg)](https://flaviohenriquehb777.github.io/Retail_Store_Sales_Data/)
+- [![Prévia do dashboard](docs/assets/miniatura_rounded.png)](https://flaviohenriquehb777.github.io/Retail_Store_Sales_Data/)
 - Publicação (GitHub Pages):  
   https://flaviohenriquehb777.github.io/Retail_Store_Sales_Data/
 - Arquivo publicado: `docs/index.html`
