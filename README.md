@@ -1,12 +1,11 @@
-<<<<<<< HEAD
-# Retail Store Sales Data — Recuperação de Margem (Análises Descritiva, Diagnóstica e Prescritiva)
+# Retail Store Sales Data: Recuperação de Margem (Análises Descritiva, Diagnóstica e Prescritiva)
+
+[![Dashboard](docs/assets/thumbnail_dark_rounded.png)](https://flaviohenriquehb777.github.io/Retail_Store_Sales_Data/)
 
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Pandas](https://img.shields.io/badge/pandas-data%20analysis-150458?logo=pandas&logoColor=white)](https://pandas.pydata.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE.md)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Deploy-success?logo=github&logoColor=white)](#publicação-no-github-pages)
-
-[![Dashboard](docs/assets/thumbnail.png)](https://flaviohenriquehb777.github.io/Retail_Store_Sales_Data/)
 
 ## Sumário
 - [Visão Geral do Modelo](#visão-geral-do-modelo)
@@ -116,8 +115,3 @@ Este projeto é distribuído sob a licença MIT. Consulte [LICENSE.md](LICENSE.m
 - Nome: Flávio Henrique Barbosa
 - LinkedIn:
 - Email: flaviohenriquehb777@outlook.com
-
-=======
-# Retail_Store_Sales_Data
-Uma análise detalhada da empresa de varejo Bella Stationery. Foco em análise descritiva, análise diagnóstica e análise prescritiva.
->>>>>>> origin/main
