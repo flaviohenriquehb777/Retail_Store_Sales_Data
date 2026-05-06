@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Retail Store Sales Data — Recuperação de Margem (Análises Descritiva, Diagnóstica e Prescritiva)
 
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)](https://www.python.org/)
@@ -116,3 +117,7 @@ Este projeto é distribuído sob a licença MIT. Consulte [LICENSE.md](LICENSE.m
 - LinkedIn:
 - Email: flaviohenriquehb777@outlook.com
 
+=======
+# Retail_Store_Sales_Data
+Uma análise detalhada da empresa de varejo Bella Stationery. Foco em análise descritiva, análise diagnóstica e análise prescritiva.
+>>>>>>> origin/main
