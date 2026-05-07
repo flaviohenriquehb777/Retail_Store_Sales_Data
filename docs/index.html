@@ -1,10 +1,37 @@
-﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿<!doctype html>
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Dashboard: Retail Store Sales</title>
     <meta name="description" content="Dashboard interativo de análise de vendas do varejo com KPIs, mix de categorias e gráficos analíticos." />
+    <script>
+      (function () {
+        try {
+          var url = new URL(window.location.href);
+          if (!url.searchParams.has("reset_sw")) return;
+          var tasks = [];
+          if ("serviceWorker" in navigator && navigator.serviceWorker.getRegistrations) {
+            tasks.push(
+              navigator.serviceWorker.getRegistrations().then(function (regs) {
+                return Promise.all(regs.map(function (r) { return r.unregister(); }));
+              })
+            );
+          }
+          if ("caches" in window && caches.keys) {
+            tasks.push(
+              caches.keys().then(function (keys) {
+                return Promise.all(keys.map(function (k) { return caches.delete(k); }));
+              })
+            );
+          }
+          Promise.all(tasks).finally(function () {
+            url.searchParams.delete("reset_sw");
+            window.location.replace(url.toString());
+          });
+        } catch (e) {}
+      })();
+    </script>
     <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC8klEQVR42nWTTWicVRSG33Pu/X4yM/k6aVIbbBIwtqgxQkUU4kJQRFwIxY0L/wIW3HShgoK7bBTiqptCcafdlbioFCLYQkMVbKGNUrQgluhE8S+KSebHmXvvOceFE5CCL5zd+/DCgYcwjJkRACIiNTMG8JCI3AvnoDF+l2XZNSJKwx6IyACA/gODiCyl9CIRvQRwArQFVQPzlBkagJ3x3n+4xxCR+duWP1DV+2OUc1nBoybWAxEcc1tEfnfOnRKRY5ubm88DCGYG3oNjjKdFZH43hOeiphZUmciVRFRLqgghfKGqNwE8MjMzc5qIFAD5IfyMZ35YzE5VZfk1A78A2AbQALgH1SrP800zqznnTgB4PaX0MhGd2fvB+e5udwUOeb1ef3u3233XgacBvRZSurtRq13t9/sb9Vptvd35+80YYzYxMXZ8bW3tKW9mBxXYv7Wz7ceb1TyAjdwVP8BZSaree/+qarjlnJtk534iwoOA/QHAFhYWZn2Mcco5t31gojmZuSKq6pxzNm9mO7n3TTh3Zwj0qM/ZFJguiqzXaNTGUtLfnHN3+SzLTFUpJUXmVJn9fmZeBPAVgEui2szz/HEABmAMgKgqMTOrQrndbv/IzFWn2/01RskArK+ufvra2ZWVS71er+eYN85/cvGNCxfW3gLwbRwM6rudzl8AJlNKt3xVVVtm9vMdzfFSIDcAPDk7O9P3+ciY9/lRVa3uO3LYm4cBaIjZN0S0jxm95eXlFgAghPCYiKxHkXdSSpfN7BUzu2hmn5nZYkqD42a2KCI3BoPBC/1+/0qM8RgAeDNjIrocQjqbZW4ZwOdXr1+/mbnsSwCpH8J0WWQjZVb7aG7uCEII95jJuapqfry0tMR+Tx4iei/GWGPiJ+q1aqLIXRGSDIqyHB0pi0JUDokIiOjK6Ghz1cwcEYkfSqRDOZZara33pw4dfJodPZCx//NfweSAqqx3Op1nT57c9/2wK7g9Q40BADs7O+NmdnR44/if/APeo65xxSh9aQAAAABJRU5ErkJggg==" />
     <link rel="icon" type="image/png" sizes="16x16" href="/Retail_Store_Sales_Data/favicon-16x16.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
