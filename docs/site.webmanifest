@@ -1,0 +1,20 @@
+{
+  "name": "Retail Store Sales Dashboard",
+  "short_name": "Retail Dashboard",
+  "start_url": "/Retail_Store_Sales_Data/",
+  "display": "standalone",
+  "background_color": "#0b1020",
+  "theme_color": "#0b1020",
+  "icons": [
+    {
+      "src": "/Retail_Store_Sales_Data/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/Retail_Store_Sales_Data/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
