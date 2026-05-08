@@ -1,14 +1,16 @@
-﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿<!doctype html>
+﻿﻿<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Dashboard: Retail Store Sales</title>
     <meta name="description" content="Dashboard interativo de análise de vendas do varejo com KPIs, mix de categorias e gráficos analíticos." />
-    <link rel="icon" href="favicon.ico" sizes="any" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="manifest" href="site.webmanifest" />
+    <link rel="icon" href="favicon.ico?v=20260508" sizes="any" />
+    <link rel="shortcut icon" href="favicon.ico?v=20260508" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=20260508" />
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png?v=20260508" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=20260508" />
+    <link rel="manifest" href="site.webmanifest?v=20260508" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -2287,6 +2289,10 @@
         ctx.save();
         ctx.fillStyle = "rgba(255,255,255,0.75)";
         ctx.font = "11px ui-sans-serif, system-ui";
+        const labelYSingle = h - m.b + 24;
+        const labelYTwo1 = h - m.b + 14;
+        const labelYTwo2 = h - m.b + 30;
+        const labelYRot = h - m.b + 26;
         const wrap2 = (text) => {
           const s = String(text || "");
           const hasSpace = s.includes(" ");
@@ -2318,19 +2324,19 @@
           ctx.textBaseline = "middle";
           const tw = ctx.measureText(lbl).width;
           if (tw <= barW * 0.95) {
-            ctx.fillText(lbl, x, h - 18);
+            ctx.fillText(lbl, x, labelYSingle);
             continue;
           }
           const lines = wrap2(lbl);
           const w1 = ctx.measureText(lines[0] || "").width;
           const w2 = ctx.measureText(lines[1] || "").width;
           if (lines.length === 2 && Math.max(w1, w2) <= barW * 1.25) {
-            ctx.fillText(lines[0], x, h - 34);
-            ctx.fillText(lines[1], x, h - 18);
+            ctx.fillText(lines[0], x, labelYTwo1);
+            ctx.fillText(lines[1], x, labelYTwo2);
             continue;
           }
           ctx.save();
-          ctx.translate(x, h - 22);
+          ctx.translate(x, labelYRot);
           ctx.rotate(-Math.PI / 5);
           ctx.textAlign = "right";
           ctx.textBaseline = "middle";
